@@ -5,8 +5,14 @@ xTypography
 -------------------------------- */
 // fonts
 
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+
+// body text san serif paragraph -- google fonts | hammer smith one | poppins
+// serif headers - cinzel
+// p font-size - 18px to 20px | heading double size p? 36px
+// change p color
+
+$secondary-font: 'Merriweather', serif;
+$primary-font: 'Open Sans', sans-serif;
 $color-2: #99000C; // Red
 $color-1: #260003; // Dark Red
 $color-3: #004933; // ?
@@ -51,7 +57,7 @@ section > h2::before {
 }
 
 p {
-	font-size: 1.4rem;
+	font-size: 2rem;
 	line-height: 1.4;
 	color: lighten($color-1, 25%);
 
