@@ -4,7 +4,7 @@ xTypography
 
 -------------------------------- */
 h1, h2, h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Merriweather", serif;
   color: #99000C; }
 
 h1 {
@@ -33,9 +33,9 @@ section > h2::before {
   color: #968591; }
 
 p {
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 1.4;
-  color: #ff1a2c; }
+  color: #a6000d; }
   p a {
     color: #260003;
     text-decoration: underline; }
@@ -135,48 +135,6 @@ main > h1 {
     main > h1 {
       /* title goes into the header on big devices */
       color: #BE7633; } }
-
-/* -------------------------------- 
-
-xButtons 
-
--------------------------------- */
-.btn {
-  border: none;
-  box-shadow: none;
-  border-radius: .25em;
-  font-size: 1.4rem;
-  font-family: "Open Sans", sans-serif;
-  color: #BE7633;
-  padding: .6em 2.2em;
-  cursor: pointer;
-  background: #260003; }
-  .btn:focus {
-    outline: none; }
-  .no-touch .btn:hover {
-    background: #400005; }
-  .btn.btn-success {
-    background: #6fce72; }
-    .no-touch .btn.btn-success:hover {
-      background: #82d485; }
-  .btn.btn-alert {
-    background: #004933; }
-    .no-touch .btn.btn-alert:hover {
-      background: #006345; }
-  .btn.btn-outline {
-    color: #260003;
-    background: transparent;
-    box-shadow: inset 0 0 0 1px #260003; }
-    .no-touch .btn.btn-outline:hover {
-      color: #BE7633;
-      background: #260003; }
-  @media only screen and (min-width: 768px) {
-    .btn {
-      font-size: 1.6rem; } }
-
-.cd-buttons .cd-box:nth-of-type(2) span {
-  /* CSS class name color */
-  color: #260003; }
 
 /* -------------------------------- 
 
@@ -318,7 +276,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Merriweather", serif; }
+  font-family: "Open Sans", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -327,7 +285,7 @@ img {
   max-width: 100%; }
 
 input, textarea, select {
-  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem; }
 
 header {
