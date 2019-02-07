@@ -1,5 +1,51 @@
 /* -------------------------------- 
 
+xTypography 
+
+-------------------------------- */
+h1, h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #99000C; }
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 .4em; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      margin: 1em 0 1.4em; } }
+
+section > h2::before {
+  /* number before each section title */
+  color: #968591; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #ff1a2c; }
+  p a {
+    color: #260003;
+    text-decoration: underline; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
+
+/* -------------------------------- 
+
 xBackground 
 
 -------------------------------- */
@@ -89,52 +135,6 @@ main > h1 {
     main > h1 {
       /* title goes into the header on big devices */
       color: #BE7633; } }
-
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
-h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  color: #99000C; }
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 .4em; }
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 1024px) {
-    h1 {
-      font-size: 4rem; } }
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0; }
-  @media only screen and (min-width: 768px) {
-    h2 {
-      font-size: 1.8rem;
-      margin: 1em 0 1.4em; } }
-
-section > h2::before {
-  /* number before each section title */
-  color: #968591; }
-
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #ff1a2c; }
-  p a {
-    color: #260003;
-    text-decoration: underline; }
-  @media only screen and (min-width: 768px) {
-    p {
-      font-size: 1.6rem;
-      line-height: 1.6; } }
 
 /* -------------------------------- 
 
