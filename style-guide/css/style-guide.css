@@ -3,12 +3,13 @@
 xTypography 
 
 -------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Hammersmith+One|Poppins");
 h1, h2, h3 {
-  font-family: "Merriweather", serif;
+  font-family: "Cinzel", serif;
   color: #99000C; }
 
 h1 {
-  font-size: 5rem;
+  font-size: 2.25em;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em; }
@@ -22,26 +23,35 @@ h1 {
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0; }
+  margin: 1em 0;
+  font-size: 2em; }
   @media only screen and (min-width: 768px) {
     h2 {
-      font-size: 1.8rem;
+      font-size: 2.625em;
       margin: 1em 0 1.4em; } }
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.3em; }
+  @media only screen and (min-width: 768px) {
+    h3 {
+      font-size: 1.5em; } }
 
 section > h2::before {
   /* number before each section title */
   color: #968591; }
 
 p {
-  font-size: 2rem;
+  font-size: 1em;
   line-height: 1.4;
-  color: #a6000d; }
+  color: #260003; }
   p a {
     color: #260003;
     text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
-      font-size: 1.6rem;
+      font-size: 1.2em;
       line-height: 1.6; } }
 
 /* -------------------------------- 
@@ -148,114 +158,13 @@ xIcons
 
 /* -------------------------------- 
 
-xForm 
-
+xOur Group Names List 
+-- Andrew 
 -------------------------------- */
-input[type=text], select {
-  border: 1px solid #B9AEB6;
-  border-radius: .25em;
-  background: #BE7633; }
-  input[type=text]:focus, select:focus {
-    outline: none; }
-
-input[type=text] {
-  padding: .6em 1em;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03); }
-  input[type=text].success {
-    border-color: #6fce72;
-    box-shadow: 0 0 6px rgba(111, 206, 114, 0.2); }
-  input[type=text].alert {
-    border-color: #004933;
-    box-shadow: 0 0 6px rgba(0, 73, 51, 0.2); }
-  input[type=text]:focus {
-    border-color: #260003;
-    box-shadow: 0 0 6px rgba(38, 0, 3, 0.2); }
-
-input[type=radio],
-input[type=checkbox] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  opacity: 0; }
-
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  .radio-label::before, .radio-label::after,
-  .checkbox-label::before,
-  .checkbox-label::after {
-    /* custom radio and check boxes */
-    content: '';
-    display: block;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
-  .radio-label::before,
-  .checkbox-label::before {
-    left: 0;
-    border: 1px solid #B9AEB6;
-    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03); }
-  .radio-label::after,
-  .checkbox-label::after {
-    left: 3px;
-    background: url("../assets/form/icon-check.svg") no-repeat center center;
-    display: none; }
-
-.radio-label::before {
-  border-radius: 50%; }
-
-.checkbox-label::before {
-  border-radius: 3px; }
-
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #99000C;
-  border: none;
-  box-shadow: none; }
-
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block; }
-
-.cd-select::after {
-  /* switcher arrow for select element */
-  content: '';
-  position: absolute;
-  z-index: 1;
-  right: 14px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("../assets/form/icon-select.svg") no-repeat center center;
-  pointer-events: none; }
-
-select {
-  position: relative;
-  padding: .6em 2em .6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none; }
+.members_list {
+  line-height: 1.5em; }
+  .members_list h3 {
+    margin-bottom: 0.5em; }
 
 /* -------------------------------- 
 
@@ -276,7 +185,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -285,7 +194,7 @@ img {
   max-width: 100%; }
 
 input, textarea, select {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem; }
 
 header {
