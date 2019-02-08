@@ -56,13 +56,28 @@ p {
 
 /* -------------------------------- 
 
-xBackground 
-
+xOur Group Names List 
+-- AP
 -------------------------------- */
-body {
-  /* this is the page background */
-  background-color: #BE7633; }
+.members_list h3 {
+  margin-bottom: 0.4em; }
+.members_list li {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #260003; }
+  @media only screen and (min-width: 768px) {
+    .members_list li {
+      font-size: 1.2em;
+      line-height: 1.4; } }
 
+/* ********************************
+*
+*   I didn't really see anything of an 
+*   html elements style section, so I 
+*   just copied this in for it.
+*   -- AP
+*
+************************************/
 /* -------------------------------- 
 
 xPatterns
@@ -75,6 +90,15 @@ xPatterns
   background: #BE7633;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px; }
+
+/* -------------------------------- 
+
+xBackground 
+
+-------------------------------- */
+body {
+  /* this is the page background */
+  background-color: #BE7633; }
 
 /* -------------------------------- 
 
@@ -155,16 +179,6 @@ xIcons
   /* icons size */
   width: 32px;
   height: 32px; }
-
-/* -------------------------------- 
-
-xOur Group Names List 
--- Andrew 
--------------------------------- */
-.members_list {
-  line-height: 1.5em; }
-  .members_list h3 {
-    margin-bottom: 0.5em; }
 
 /* -------------------------------- 
 
