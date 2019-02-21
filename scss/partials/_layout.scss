@@ -1,0 +1,59 @@
+/* ---------------------------------------
+-
+-   LAYOUT
+-
+- ----------------------------------------*/
+
+// Breakpoint Variables
+$L: 60em;
+
+// Media Query 2 sizes
+@mixin MQ($screen) {
+    @if $screen == L {
+        @media only screen and (min-width: $L) { @content; }
+    }
+}
+
+
+// main layout
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include MQ(L) {
+        flex-flow: row wrap;
+    }
+
+    .intro {
+        order: 1;
+        // added backround color to style and position easier
+        background: red;
+
+        @include MQ(L) {
+            width: 100%;
+        }
+    }
+    
+    .main {
+        // added backround color to style and position easier
+        background: green;
+        order: 3;
+
+        @include MQ(L) {
+            order: 2;
+            width: 85%;
+        }
+    }
+    
+    .sidebar {
+        // added backround color to style and position easier
+        background: blue;
+        order: 2;
+    
+        @include MQ(L) {
+            order: 3;
+            width: 15%;
+        }
+    }
+
+}
