@@ -10,6 +10,7 @@ $success: #6fce72; // green
 
 .intro{
     background-color: $color-2;
+    padding-right: 10em;
 }
 
 .main{
@@ -18,4 +19,17 @@ $success: #6fce72; // green
 
 .sidebar{
     background-color: $color-4;
+}
+
+.extra1 {
+    border: 2px solid black;
+    background-image: url(../../assets/dragon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20vw;
+    height: 30vw;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
 }

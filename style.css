@@ -96,6 +96,7 @@ table {
 
 .intro {
   background-color: #99000C;
+  padding-right: 10em;
 }
 
 .main {
@@ -104,6 +105,19 @@ table {
 
 .sidebar {
   background-color: #B9AEB6;
+}
+
+.extra1 {
+  border: 2px solid black;
+  background-image: url(../../assets/dragon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20vw;
+  height: 30vw;
+  top: 0;
+  right: 0;
+  opacity: 0.8;
 }
 
 /* -------------------------------- 
