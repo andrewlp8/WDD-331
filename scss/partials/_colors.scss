@@ -1,0 +1,21 @@
+//xColors
+
+
+$color-2: #99000C; //red
+$color-1: #260003; // Dark Red
+$color-3: #004933; // ?
+$color-5: #BE7633; // Gold
+$color-4: #B9AEB6; // Grey
+$success: #6fce72; // green
+
+.intro{
+    background-color: $color-2;
+}
+
+.main{
+    background-color: $color-5;
+}
+
+.sidebar{
+    background-color: $color-4;
+}

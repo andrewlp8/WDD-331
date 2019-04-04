@@ -27,7 +27,7 @@ $L: 60em;
     .intro {
         order: 1;
         // added backround color to style and position easier
-        background: red;
+        //background: red;
 
         @include MQ(L) {
             width: 100%;
@@ -36,7 +36,7 @@ $L: 60em;
     
     .main {
         // added backround color to style and position easier
-        background: green;
+        //background: green;
         order: 3;
 
         @include MQ(L) {
@@ -47,7 +47,7 @@ $L: 60em;
     
     .sidebar {
         // added backround color to style and position easier
-        background: blue;
+      //  background: blue;
         order: 2;
     
         @include MQ(L) {

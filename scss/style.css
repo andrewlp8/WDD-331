@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Cinzel|Hammersmith+One|Poppins");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -76,6 +75,7 @@ table {
   }
 }
 .page-wrapper .main {
+  background: green;
   order: 3;
 }
 @media only screen and (min-width: 60em) {
@@ -85,6 +85,7 @@ table {
   }
 }
 .page-wrapper .sidebar {
+  background: blue;
   order: 2;
 }
 @media only screen and (min-width: 60em) {
@@ -95,60 +96,7 @@ table {
 }
 
 .intro {
-  background-color: #99000C;
-}
-
-.main {
-  background-color: #BE7633;
-}
-
-.sidebar {
-  background-color: #B9AEB6;
-}
-
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
-h1, h2, h3 {
-  font-family: "Cinzel", serif;
-  color: #260003;
-}
-
-h1 {
-  font-size: 2.25em;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
-}
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-  font-size: 2em;
-}
-
-h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1.3em;
-}
-
-section > h2::before {
-  /* number before each section title */
-  color: #968591;
-}
-
-p {
-  font-size: 1em;
-  line-height: 1.4;
-  color: #260003;
-}
-p a {
-  color: #260003;
-  text-decoration: underline;
+  background-color: #260003;
 }
 
 /*# sourceMappingURL=style.css.map */
