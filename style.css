@@ -59,33 +59,32 @@ body {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  flex-grow: 0; }
+  justify-content: space-between; }
   @media only screen and (min-width: 65em) {
     .page-wrapper {
       flex-flow: row wrap; } }
   .page-wrapper .intro {
     order: 1;
-    flex-grow: 0; }
+    width: 90%; }
+    @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+      .page-wrapper .intro {
+        width: 95%; } }
     @media only screen and (min-width: 65em) {
       .page-wrapper .intro {
-        width: 70%;
-        flex-grow: 0; } }
+        width: 65%; } }
   .page-wrapper .main {
     order: 3;
     flex-grow: 0; }
     @media only screen and (min-width: 65em) {
       .page-wrapper .main {
         order: 2;
-        width: 75%;
-        flex-grow: 0; } }
+        width: 65%; } }
   .page-wrapper .sidebar {
-    order: 2;
-    flex-grow: 0; }
+    order: 2; }
     @media only screen and (min-width: 65em) {
       .page-wrapper .sidebar {
         order: 4;
-        width: 20%;
-        flex-grow: 1;
+        width: 25%;
         height: 100%; } }
 
 /* -------------------------------- 
@@ -102,6 +101,9 @@ h1 {
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em; }
+  @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+    h1 {
+      font-size: 4rem; } }
 
 h2 {
   font-weight: bold;
@@ -134,19 +136,18 @@ p {
     background-color: #BE7633; }
   .main .explanation {
     padding: 0.5em 1em;
-    margin: 2em;
     border-radius: 5px;
-    width: 100%;
-    background: #FeF;
-    -moz-box-shadow: inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow: inset 0 0 10px #000000; }
+    background: #FeF; }
 
 .intro {
   padding: 0.5em 1em;
-  margin-top: 150vw;
+  margin: 150vw auto 0 auto;
   border-radius: 5px;
-  background-color: #fef; }
+  background-color: #fef;
+  width: 90%; }
+  @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+    .intro {
+      margin-top: 100vw; } }
   @media only screen and (min-width: 65em) {
     .intro {
       margin-top: 25vw; } }
@@ -155,6 +156,9 @@ p {
   .intro header {
     position: absolute;
     top: 1em;
+    left: 1em;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     border-radius: 5px;
     background: #004933;
@@ -176,9 +180,11 @@ p {
       color: #BE7633; }
     .intro header h1 {
       font-size: 4em; }
+    @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+      .intro header {
+        width: 95%; } }
     @media only screen and (min-width: 65em) {
       .intro header {
-        margin: 2em;
         left: 32vw; } }
   .intro .summary {
     padding: 0.5em 1em;
@@ -198,6 +204,7 @@ p {
     width: 100%; }
 
 .sidebar {
+  margin-right: 0;
   background: #004933;
   border-radius: 5px;
   padding: 0.5em 1em;
@@ -237,19 +244,22 @@ p {
   background-image: url(assets/dragon.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 30vw;
-  height: 40vw;
+  width: 36vw;
+  height: 50vw;
   position: absolute;
-  top: 100vw;
-  left: 35%;
+  top: 90vw;
+  left: 30%;
   opacity: 1;
   border-radius: 0 0 25px 25px;
   -webkit-filter: drop-shadow(0 0 10px #260003);
   filter: drop-shadow(0 0 10px #260003); }
+  @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+    .extra1 {
+      top: 40vw; } }
   @media only screen and (min-width: 65em) {
     .extra1 {
       top: 2em;
-      left: 2vw;
+      left: 9vw;
       width: 15vw;
       height: 21vw;
       border-radius: 0 0 50px 50px; } }

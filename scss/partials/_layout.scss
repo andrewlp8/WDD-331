@@ -7,9 +7,14 @@
 
 // Breakpoint Variables
 $L: 65em;
+$M: 47.9em;
 
 // Media Query 2 sizes
+
 @mixin MQ($screen) {
+    @if $screen == M {
+        @media only screen and (min-width: $M) and (max-width: $L) { @content; }
+    }
     @if $screen == L {
         @media only screen and (min-width: $L) { @content; }
     }
@@ -25,7 +30,7 @@ body {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    flex-grow: 0;
+    justify-content: space-between;
     
 
     @include MQ(L) {
@@ -36,11 +41,14 @@ body {
         order: 1;
         // added backround color to style and position easier
         //background: red;
-        flex-grow: 0;
+        width: 90%;
+
+        @include MQ(M) {
+            width: 95%;
+        }
 
         @include MQ(L) {
-            width: 70%;
-            flex-grow: 0;
+            width: 65%;
         }
     }
     
@@ -52,8 +60,7 @@ body {
 
         @include MQ(L) {
             order: 2;
-            width: 75%;
-            flex-grow: 0;
+            width: 65%;
         }
     }
     
@@ -61,12 +68,10 @@ body {
         // added backround color to style and position easier
       //  background: blue;
         order: 2;
-        flex-grow: 0;
     
         @include MQ(L) {
             order: 4;
-            width: 20%;
-            flex-grow: 1;
+            width: 25%;
             height: 100%;   
         }
     }

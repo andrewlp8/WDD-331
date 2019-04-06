@@ -3,19 +3,23 @@
     background-image: url(assets/dragon.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30vw;
-    height: 40vw;
+    width: 36vw;
+    height: 50vw;
     position: absolute;
-    top: 100vw;
-    left: 35%;
+    top: 90vw;
+    left: 30%;
     opacity: 1;
     border-radius: 0 0 25px 25px;
     -webkit-filter: $myShadow;
     filter: $myShadow; 
 
+    @include MQ(M) {
+        top: 40vw;
+    }
+
     @include MQ(L) {
         top: 2em;
-        left: 2vw;
+        left: 9vw;
         width: 15vw;
         height: 21vw;
         border-radius: 0 0 50px 50px;

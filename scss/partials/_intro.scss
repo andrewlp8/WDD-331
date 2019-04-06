@@ -1,22 +1,27 @@
 .intro{
     padding: $myPadding;
-    margin-top: 150vw;
+    margin: 150vw auto 0 auto;
     border-radius: 5px;
     background-color: #fef;
+    width: 90%;
 
+    @include MQ(M) {
+        margin-top: 100vw;
+    }
     @include MQ(L){
         margin-top: 25vw;
     }
 
     > * {
-        padding: 4em;
-        
+        padding: 4em;   
     }
 
     header {
-        
         position: absolute;
         top: 1em;
+        left: 1em;
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
         border-radius: 5px;
         background: $color-3; /* Old browsers */
@@ -34,10 +39,15 @@
         h1 {
             font-size: 4em;
         }
+
         padding: $myPadding;
+
         
+        @include MQ(M) {
+            width: 95%;
+        }
+
         @include MQ(L) {
-            margin: 2em;
             left: 32vw;
         }
     }
