@@ -35,10 +35,21 @@
 
         h1,h2 {
             font-weight: bolder;
-            color: $color-5;
+            color: #fef;
         }
         h1 {
             font-size: 4em;
+        }
+
+        h1::before{
+        position: absolute;
+        content: "";
+        background-repeat: no-repeat;
+        top: 0.5em;
+        right: 15em;
+            width: 100px;
+            height: 123px;
+            background-image: url("assets/zenMandarin.png");
         }
 
         @include MQ(M) {

@@ -54,7 +54,7 @@ table {
 body {
   height: 100%;
   margin: 0;
-  background-color: #99000C; }
+  background-color: #da0012; }
 
 .page-wrapper {
   display: flex;
@@ -130,14 +130,35 @@ p {
 .main {
   background-color: #BE7633;
   margin: 0 auto;
-  border-radius: 5px; }
+  padding: 0.5em 1em;
+  border: 30px solid transparent;
+  padding: 30px;
+  border-image-source: url(assets/mandarinZenGarden.png);
+  border-image-repeat: round;
+  border-image-slice: 30; }
+  .main .explanation, .main .benefits {
+    border: 30px solid transparent;
+    padding: 30px;
+    border-image-source: url(assets/mandarinZenGarden.png);
+    border-image-repeat: round;
+    border-image-slice: 30; }
+  .main .participation, .main .requirements {
+    border: 30px solid transparent;
+    padding: 30px;
+    border-image-source: url(assets/mandarinZenGardenVertical.png);
+    border-image-repeat: repeat;
+    border-image-slice: 130; }
+  .main > *:not(:last-child) {
+    padding: 2em 4em;
+    margin: 2em;
+    background: #FeF;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000; }
   @media only screen and (min-width: 65em) {
     .main {
       margin-top: 25em;
       width: 90%; } }
-  .main > * {
-    padding: 4em;
-    background-color: #BE7633; }
 
 .intro {
   padding: 0.5em 1em;
@@ -177,9 +198,18 @@ p {
     filter: drop-shadow(0 0 10px #260003); }
     .intro header h1, .intro header h2 {
       font-weight: bolder;
-      color: #BE7633; }
+      color: #fef; }
     .intro header h1 {
       font-size: 4em; }
+    .intro header h1::before {
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      top: 0.5em;
+      right: 15em;
+      width: 100px;
+      height: 123px;
+      background-image: url("assets/zenMandarin.png"); }
     @media only screen and (min-width: 47.9em) and (max-width: 65em) {
       .intro header {
         width: 95%; } }
@@ -276,7 +306,7 @@ html, body {
   margin: 0; }
 
 body {
-  background: linear-gradient(rgba(102, 0, 8, 0.75), rgba(102, 0, 8, 0.75)), url(assets/pipes.png);
+  background: linear-gradient(rgba(153, 0, 12, 0.75), rgba(153, 0, 12, 0.75)), url(assets/pipes.png);
   background-repeat: repeat; }
   body a {
     text-decoration: none;

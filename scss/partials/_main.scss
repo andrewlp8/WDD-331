@@ -2,17 +2,46 @@
     
     background-color: $color-5;
     margin: 0 auto;
-    border-radius: 5px;
+    padding: $myPadding;
+
+    //border-radius: 5px; 
+    border: 30px solid transparent;
+    padding: 30px;
+    border-image-source: url(assets/mandarinZenGarden.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    
+    
+    .explanation,.benefits {
+        border: 30px solid transparent;
+    padding: 30px;
+    border-image-source: url(assets/mandarinZenGarden.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+    }
+
+    .participation, .requirements {
+        border: 30px solid transparent;
+    padding: 30px;
+    border-image-source: url(assets/mandarinZenGardenVertical.png);
+    border-image-repeat: repeat;
+    border-image-slice: 130;
+    }
+    > *:not(:last-child) {
+        
+
+        padding: 2em 4em;
+        margin: 2em;
+        background: #FeF;
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    
+    }
 
     @include MQ(L){
         margin-top: 25em;
         width: 90%;
     }
-
-    > * {
-        padding: 4em;
-        background-color: $color-5;
-    }
-
 
 } 
