@@ -1,0 +1,25 @@
+.extra1 {
+    border: none;
+    background-image: url(../../assets/dragon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 22vw;
+    height: 30vw;
+    margin: 0 auto;
+    top: 1em;
+    right: 2em;
+    opacity: 1;
+    border-radius: 0 0 25px 25px;
+
+
+    -webkit-filter: $myShadow;
+    filter: $myShadow; 
+
+    @include MQ(L) {
+        right: 20.5rem;
+        width: 15vw;
+        height: 21vw;
+        border-radius: 0 0 50px 50px;
+    }
+}

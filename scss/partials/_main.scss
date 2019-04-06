@@ -1,0 +1,9 @@
+.main{
+    border-radius: 5px;
+    padding: $myPadding;
+
+    > * {
+        padding: 4em;
+        background-color: $color-5;
+    }
+}

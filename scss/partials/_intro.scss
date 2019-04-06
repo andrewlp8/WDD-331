@@ -1,0 +1,11 @@
+.intro{
+    padding: $myPadding;
+    border-radius: 5px;
+
+    > * {
+        padding: 4em;
+        background-color: $color-5;
+    }
+
+
+}

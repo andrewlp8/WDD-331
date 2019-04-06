@@ -3,33 +3,18 @@
 
 $color-2: #99000C; //red
 $color-1: #260003; // Dark Red
-$color-3: #004933; // ?
+$color-3: #004933; // Green
 $color-5: #BE7633; // Gold
 $color-4: #B9AEB6; // Grey
-$success: #6fce72; // green
+$success: #6fce72; // light green
 
-.intro{
-    background-color: $color-2;
-    padding-right: 10em;
-}
 
-.main{
-    background-color: $color-5;
-}
 
-.sidebar{
-    background-color: $color-4;
-}
 
-.extra1 {
-    border: 2px solid black;
-    background-image: url(../../assets/dragon.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 20vw;
-    height: 30vw;
-    top: 0;
-    right: 0;
-    opacity: 0.8;
-}
+
+
+
+
+
+
+

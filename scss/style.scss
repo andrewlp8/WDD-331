@@ -1,10 +1,28 @@
 @import 'partials/_reset';
-@import 'partials/_layout';
 @import 'partials/_colors';
+@import 'partials/effects';
+@import 'partials/_layout';
 @import 'partials/_typography';
+@import 'partials/main';
+@import 'partials/intro';
+@import 'partials/sidebar';
+@import 'partials/dragon';
 
 
 
-
+* {
+    box-sizing: border-box;
+}
 
 //test
+body{
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(
+        rgba(darken($color-2, 10%), 0.75), 
+        rgba(darken($color-2, 10%), 0.75)
+      ),
+    url(../assets/pipes.png);
+    background-repeat: repeat;
+}
+

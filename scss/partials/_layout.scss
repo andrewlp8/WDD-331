@@ -17,9 +17,16 @@ $L: 60em;
 
 
 // main layout
+body {
+    height: 100%;
+    margin: 0;
+    background-color: $color-2;
+}
 .page-wrapper {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    
 
     @include MQ(L) {
         flex-flow: row wrap;
@@ -29,9 +36,11 @@ $L: 60em;
         order: 1;
         // added backround color to style and position easier
         //background: red;
+        flex-grow: 0;
 
         @include MQ(L) {
-            width: 100%;
+            width: 80%;
+            flex-grow: 0;
         }
     }
     
@@ -39,10 +48,12 @@ $L: 60em;
         // added backround color to style and position easier
         //background: green;
         order: 3;
+        flex-grow: 0;
 
         @include MQ(L) {
             order: 2;
-            width: 85%;
+            width: 80%;
+            flex-grow: 0;
         }
     }
     
@@ -50,10 +61,13 @@ $L: 60em;
         // added backround color to style and position easier
       //  background: blue;
         order: 2;
+        flex-grow: 0;
     
         @include MQ(L) {
             order: 3;
-            width: 15%;
+            width: 20%;
+            flex-grow: 1;
+            height: 100%;   
         }
     }
 

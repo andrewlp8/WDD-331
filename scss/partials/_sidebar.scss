@@ -1,0 +1,26 @@
+.sidebar {
+    padding: $myPadding;
+    background-color: $color-3;
+    border-radius: 5px;
+    @include MQ(L) {
+        margin-top: -40em;
+    }
+
+    .select, .archives, .resources {
+        background-color: $color-1;
+        padding: $myPadding;
+        text-align: center;
+        border-radius: $myBorder-radius;
+    }
+
+
+    .design-selection > *, .design-archives > *, .zen-resources > * {
+        color: $color-4;
+        padding: $myPadding;
+
+        a {
+            text-decoration: none;
+            color: $color-4;
+        }
+    }
+}
