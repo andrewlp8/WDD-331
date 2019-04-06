@@ -1,15 +1,15 @@
 .intro{
     padding: $myPadding;
-    margin: 150vw auto 0 auto;
+    margin: 150vw 0 auto 0;
     border-radius: 5px;
     background-color: #fef;
     width: 90%;
 
     @include MQ(M) {
-        margin-top: 100vw;
+        margin: 100vw auto 0;
     }
     @include MQ(L){
-        margin-top: 25vw;
+        margin: 30vw 0 0;
     }
 
     > * {
@@ -17,6 +17,7 @@
     }
 
     header {
+        padding: $myPadding;
         position: absolute;
         top: 1em;
         left: 1em;
@@ -40,15 +41,14 @@
             font-size: 4em;
         }
 
-        padding: $myPadding;
-
-        
         @include MQ(M) {
             width: 95%;
         }
 
         @include MQ(L) {
             left: 32vw;
+            width: 75%;
+            
         }
     }
 
