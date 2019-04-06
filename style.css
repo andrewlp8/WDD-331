@@ -130,31 +130,67 @@ p {
 .main {
   background-color: #BE7633;
   margin: 0 auto;
-  padding: 0.5em 1em;
-  border: 30px solid transparent;
-  padding: 30px;
+  border: 15px solid transparent;
   border-image-source: url(assets/mandarinZenGarden.png);
   border-image-repeat: round;
   border-image-slice: 30; }
+  @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+    .main {
+      border: 20px solid transparent;
+      border-image-source: url(assets/mandarinZenGarden.png);
+      border-image-repeat: round;
+      border-image-slice: 30; } }
+  @media only screen and (min-width: 65em) {
+    .main {
+      border: 30px solid transparent;
+      border-image-source: url(assets/mandarinZenGarden.png);
+      border-image-repeat: round;
+      border-image-slice: 30; } }
   .main .explanation, .main .benefits {
-    border: 30px solid transparent;
-    padding: 30px;
+    border: 15px solid transparent;
     border-image-source: url(assets/mandarinZenGarden.png);
     border-image-repeat: round;
-    border-image-slice: 30; }
+    border-image-slice: 30;
+    width: 100%; }
+    @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+      .main .explanation, .main .benefits {
+        border: 20px solid transparent;
+        border-image-source: url(assets/mandarinZenGarden.png);
+        border-image-repeat: round;
+        border-image-slice: 30; } }
+    @media only screen and (min-width: 65em) {
+      .main .explanation, .main .benefits {
+        border: 30px solid transparent;
+        border-image-source: url(assets/mandarinZenGarden.png);
+        border-image-repeat: round;
+        border-image-slice: 30; } }
   .main .participation, .main .requirements {
-    border: 30px solid transparent;
-    padding: 30px;
+    border: 15px solid transparent;
     border-image-source: url(assets/mandarinZenGardenVertical.png);
     border-image-repeat: repeat;
     border-image-slice: 130; }
+    @media only screen and (min-width: 47.9em) and (max-width: 65em) {
+      .main .participation, .main .requirements {
+        border: 20px solid transparent;
+        border-image-source: url(assets/mandarinZenGardenVertical.png);
+        border-image-repeat: repeat;
+        border-image-slice: 130; } }
+    @media only screen and (min-width: 65em) {
+      .main .participation, .main .requirements {
+        border: 30px solid transparent;
+        border-image-source: url(assets/mandarinZenGardenVertical.png);
+        border-image-repeat: repeat;
+        border-image-slice: 130; } }
   .main > *:not(:last-child) {
-    padding: 2em 4em;
-    margin: 2em;
+    margin: 2em auto;
+    padding: 0.5em 1em;
     background: #FeF;
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000; }
+  .main footer {
+    margin-bottom: 2em;
+    font-size: 1.5em; }
   @media only screen and (min-width: 65em) {
     .main {
       margin-top: 25em;
