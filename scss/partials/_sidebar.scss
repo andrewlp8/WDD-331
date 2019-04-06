@@ -14,8 +14,12 @@
     -webkit-filter: $myShadow;
     filter:         $myShadow; 
 
+
     @include MQ(L) {
-        margin-top: -35em;
+        position: absolute;
+        top: 20em;
+        right: 0;
+        height: 100%;
     }
 
     .select, .archives, .resources {

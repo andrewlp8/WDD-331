@@ -1,15 +1,18 @@
 .main{
-    border-radius: 5px;
+    
     background-color: $color-5;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    @include MQ(L){
+        margin-top: 25em;
+        width: 90%;
+    }
 
     > * {
         padding: 4em;
         background-color: $color-5;
     }
 
-    .explanation {
-        padding: $myPadding;
-        border-radius: 5px;
-        background: #FeF;
-         }
-}
+
+} 

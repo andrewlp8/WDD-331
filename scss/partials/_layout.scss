@@ -56,11 +56,9 @@ body {
         // added backround color to style and position easier
         //background: green;
         order: 3;
-        flex-grow: 0;
-
+        width: 95%;
         @include MQ(L) {
             order: 2;
-            width: 65%;
         }
     }
     

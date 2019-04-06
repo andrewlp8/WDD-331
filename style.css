@@ -74,11 +74,10 @@ body {
         width: 65%; } }
   .page-wrapper .main {
     order: 3;
-    flex-grow: 0; }
+    width: 95%; }
     @media only screen and (min-width: 65em) {
       .page-wrapper .main {
-        order: 2;
-        width: 65%; } }
+        order: 2; } }
   .page-wrapper .sidebar {
     order: 2; }
     @media only screen and (min-width: 65em) {
@@ -129,19 +128,20 @@ p {
     text-decoration: underline; }
 
 .main {
-  border-radius: 5px;
-  background-color: #BE7633; }
+  background-color: #BE7633;
+  margin: 0 auto;
+  border-radius: 5px; }
+  @media only screen and (min-width: 65em) {
+    .main {
+      margin-top: 25em;
+      width: 90%; } }
   .main > * {
     padding: 4em;
     background-color: #BE7633; }
-  .main .explanation {
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    background: #FeF; }
 
 .intro {
   padding: 0.5em 1em;
-  margin: 150vw 0 auto 0;
+  margin: 150vw auto 0 auto;
   border-radius: 5px;
   background-color: #fef;
   width: 90%; }
@@ -226,7 +226,10 @@ p {
   filter: drop-shadow(0 0 10px #260003); }
   @media only screen and (min-width: 65em) {
     .sidebar {
-      margin-top: -35em; } }
+      position: absolute;
+      top: 20em;
+      right: 0;
+      height: 100%; } }
   .sidebar .select, .sidebar .archives, .sidebar .resources {
     background-color: #260003;
     padding: 0.5em 1em;
