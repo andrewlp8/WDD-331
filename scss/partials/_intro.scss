@@ -1,11 +1,70 @@
 .intro{
     padding: $myPadding;
+    margin-top: 150vw;
     border-radius: 5px;
+    background-color: #fef;
+
+    @include MQ(L){
+        margin-top: 25vw;
+    }
 
     > * {
         padding: 4em;
-        background-color: $color-5;
+        
     }
 
+    header {
+        position: absolute;
+        top: 1em;
+        text-align: center;
+        border-radius: 5px;
+        background: #bc8b60; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #bc8b60 1%, #bc8b60 1%, #be7633 99%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #bc8b60 1%,#bc8b60 1%,#be7633 99%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #bc8b60 1%,#bc8b60 1%,#be7633 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc8b60', endColorstr='#be7633',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        -moz-filter:    $myShadow;
+        -webkit-filter: $myShadow;
+        filter:         $myShadow; 
+        
+        h1 {
+            font-size: 4em;
+        }
+        padding: $myPadding;
+        
+        @include MQ(L) {
+            margin: 2em;
+            left: 32vw;
+        }
+    }
 
+    .summary {
+        padding: $myPadding;
+        margin: 2em;
+        border-radius: 5px;
+        width: 60%;
+        p {
+            color: $color-2;
+            margin-bottom: 2em;
+        }
+
+        @include MQ(L) {
+            
+        }
+    }
+
+    .preamble {
+        padding: $myPadding;
+        margin: 2em;
+        border-radius: 5px;
+        width: 100%;
+        background: #FeF;
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    }
+
+    @include MQ(L) {
+            
+    }
 }

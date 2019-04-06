@@ -1,9 +1,19 @@
 .sidebar {
-    padding: $myPadding;
-    background-color: $color-3;
+    background: $color-3;
+    background: -moz-linear-gradient(left, #7a9991 0%, #7a9991 13%, #7a9991 13%, #7a9991 24%, #004933 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #7a9991 0%,#7a9991 13%,#7a9991 13%,#7a9991 24%,#004933 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #7a9991 0%,#7a9991 13%,#7a9991 13%,#7a9991 24%,#004933 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a9991', endColorstr='#004933',GradientType=1 ); /* IE6-9 */
     border-radius: 5px;
+    padding: $myPadding;
+    margin: $myMargin;
+
+    -moz-filter:    $myShadow;
+    -webkit-filter: $myShadow;
+    filter:         $myShadow; 
+
     @include MQ(L) {
-        margin-top: -40em;
+        margin-top: -35em;
     }
 
     .select, .archives, .resources {
@@ -19,8 +29,7 @@
         padding: $myPadding;
 
         a {
-            text-decoration: none;
-            color: $color-4;
+            color: $color-1;
         }
     }
 }

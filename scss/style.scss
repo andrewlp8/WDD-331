@@ -15,14 +15,20 @@
 }
 
 //test
-body{
+html, body {
     width: 100%;
     margin: 0;
+}
+body{
     background: linear-gradient(
         rgba(darken($color-2, 10%), 0.75), 
         rgba(darken($color-2, 10%), 0.75)
       ),
     url(assets/pipes.png);
     background-repeat: repeat;
+    a {
+        text-decoration: none;
+        color: $color-3;
+    }
 }
 

@@ -6,7 +6,7 @@
 
 
 // Breakpoint Variables
-$L: 60em;
+$L: 65em;
 
 // Media Query 2 sizes
 @mixin MQ($screen) {
@@ -25,7 +25,7 @@ body {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0;
     
 
     @include MQ(L) {
@@ -39,7 +39,7 @@ body {
         flex-grow: 0;
 
         @include MQ(L) {
-            width: 80%;
+            width: 70%;
             flex-grow: 0;
         }
     }
@@ -52,7 +52,7 @@ body {
 
         @include MQ(L) {
             order: 2;
-            width: 80%;
+            width: 75%;
             flex-grow: 0;
         }
     }
@@ -64,7 +64,7 @@ body {
         flex-grow: 0;
     
         @include MQ(L) {
-            order: 3;
+            order: 4;
             width: 20%;
             flex-grow: 1;
             height: 100%;   
