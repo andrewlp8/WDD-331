@@ -44,6 +44,7 @@
     }
 
     .participation, .requirements {
+        
         border: 15px solid transparent;
         border-image-source: url(assets/mandarinZenGardenVertical.png);
         border-image-repeat: repeat;
@@ -70,6 +71,10 @@
         -moz-box-shadow:    inset 0 0 10px #000000;
         -webkit-box-shadow: inset 0 0 10px #000000;
         box-shadow:         inset 0 0 10px #000000;
+
+        @include MQ(L) {
+            padding:  2em;
+        }
     
     }
 

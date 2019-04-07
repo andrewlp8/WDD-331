@@ -188,6 +188,9 @@ p {
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000; }
+    @media only screen and (min-width: 65em) {
+      .main > *:not(:last-child) {
+        padding: 2em; } }
   .main footer {
     margin-bottom: 2em;
     font-size: 1.5em; }
