@@ -240,12 +240,16 @@ p {
     filter: drop-shadow(0 0 10px #260003); }
     .intro header h1, .intro header h2 {
       font-weight: bolder;
-      color: #fef; }
+      color: #fef;
+      -webkit-filter: drop-shadow(0 0 10px #260003);
+      filter: drop-shadow(0 0 10px #260003); }
     .intro header h1 {
       font-size: 4em; }
     .intro header h1::before {
       position: absolute;
       content: "";
+      -webkit-filter: drop-shadow(0 0 10px #260003);
+      filter: drop-shadow(0 0 10px #260003);
       background-repeat: no-repeat;
       top: 0.5em;
       right: 15em;
@@ -272,9 +276,13 @@ p {
       margin-bottom: 1em; }
   .intro .preamble {
     padding: 0.5em 1em;
-    margin: 2em;
+    margin: 0;
     border-radius: 5px;
     width: 100%; }
+    @media only screen and (min-width: 65em) {
+      .intro .preamble {
+        margin: 1em;
+        margin-right: 4em; } }
 
 .sidebar {
   margin-right: 0;
@@ -313,7 +321,55 @@ p {
     padding: 0.5em 1em; }
     .sidebar .design-selection > * a, .sidebar .design-archives > * a, .sidebar .zen-resources > * a {
       line-height: 2em;
-      color: #99000C; }
+      color: #99000C;
+      display: inline-block;
+      position: relative;
+      -webkit-transition: all 0.5s ease-in-out;
+      -webkit-transform: scale(1);
+      -ms-transition: all 0.5s ease-in-out;
+      -ms-transform: scale(1);
+      -moz-transition: all 0.5s ease-in-out;
+      -moz-transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      transform: scale(1); }
+      .sidebar .design-selection > * a:hover, .sidebar .design-archives > * a:hover, .sidebar .zen-resources > * a:hover {
+        color: #BE7633;
+        -webkit-transition: all 0.5s ease-in-out;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 0.5s ease-in-out;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 0.5s ease-in-out;
+        -moz-transform: scale(1.5);
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.5);
+        z-index: 10; }
+
+* a {
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1);
+  -ms-transition: all 0.5s ease-in-out;
+  -ms-transform: scale(1);
+  -moz-transition: all 0.5s ease-in-out;
+  -moz-transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1); }
+  * a:hover {
+    color: #BE7633;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 0.5s ease-in-out;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 0.5s ease-in-out;
+    -moz-transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+    background: #260003;
+    padding: 0.2em 0.5em;
+    border-radius: 10px 20%;
+    z-index: 10; }
+  * a:visited {
+    color: #260003; }
 
 .extra1 {
   border: none;

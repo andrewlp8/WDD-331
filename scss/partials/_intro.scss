@@ -36,6 +36,8 @@
         h1,h2 {
             font-weight: bolder;
             color: #fef;
+            -webkit-filter: $myShadow;
+        filter:         $myShadow; 
         }
         h1 {
             font-size: 4em;
@@ -44,6 +46,8 @@
         h1::before{
         position: absolute;
         content: "";
+        -webkit-filter: $myShadow;
+        filter:         $myShadow; 
         background-repeat: no-repeat;
         top: 0.5em;
         right: 15em;
@@ -84,12 +88,14 @@
 
     .preamble {
         padding: $myPadding;
-        margin: 2em;
+        margin: 0;
         border-radius: 5px;
         width: 100%;
+        @include MQ(L) {
+            margin: 1em;
+            margin-right: 4em;
+    }
         }
 
-    @include MQ(L) {
-            
-    }
+    
 }

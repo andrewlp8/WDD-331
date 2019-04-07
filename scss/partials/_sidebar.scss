@@ -38,6 +38,67 @@
         a {
             line-height: 2em;
             color: $color-2;
+            display:inline-block;
+    position: relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 0.5s ease-in-out;
+    -ms-transform: scale(1); 
+    -moz-transition: all 0.5s ease-in-out;
+    -moz-transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1); 
+    &:hover {
+        color: $color-5;
+        -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 0.5s ease-in-out;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 0.5s ease-in-out;
+    -moz-transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+    z-index: 10;
+    
+    }
         }
+
+        
+
+        
     }
 }
+
+* a {  
+    position: relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 0.5s ease-in-out;
+    -ms-transform: scale(1); 
+    -moz-transition: all 0.5s ease-in-out;
+    -moz-transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1); 
+
+    &:hover {
+        color: $color-5;
+        -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 0.5s ease-in-out;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 0.5s ease-in-out;
+    -moz-transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+    background: $color-1;
+    padding: 0.2em 0.5em;
+    border-radius: $myBorder-radius;
+    z-index: 10;
+    
+    }
+
+    &:visited {
+        color: $color-1;
+    }
+}
+
