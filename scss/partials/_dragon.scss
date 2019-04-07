@@ -25,3 +25,34 @@
         border-radius: 0 0 50px 50px;
     }
 }
+.extra6 {
+    border: none;
+    background-image: url(assets/smallStoneDragon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 108em;
+        left: 9em;
+    opacity: 1;
+    -webkit-filter: $myShadow;
+    filter: $myShadow; 
+    width: 200px;
+        max-width:100%;
+        height: 132.66px;
+
+    @include MQ(M) {
+        top: 94em;
+        left: 20em;
+        width: 400px;
+        max-width:100%;
+        height: 265.333px;
+    }
+
+    @include MQ(L) {
+        top: 50em;
+        left: 10em;
+        width: 600px;
+        max-width:100%;
+        height: 398px;
+    }
+}

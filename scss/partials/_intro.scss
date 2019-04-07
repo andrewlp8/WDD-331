@@ -57,7 +57,8 @@
         }
 
         @include MQ(M) {
-            width: 95%;
+            width: 85%;
+            left: 2em;
         }
 
         @include MQ(L) {
