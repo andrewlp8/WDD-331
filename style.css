@@ -130,54 +130,54 @@ p {
 .main {
   background-color: #BE7633;
   margin: 0 auto;
-  border: 15px solid transparent;
+  border: 15px solid white;
   border-image-source: url(assets/mandarinZenGarden.png);
   border-image-repeat: round;
   border-image-slice: 30; }
   @media only screen and (min-width: 47.9em) and (max-width: 65em) {
     .main {
-      border: 20px solid transparent;
+      border: 20px solid white;
       border-image-source: url(assets/mandarinZenGarden.png);
       border-image-repeat: round;
       border-image-slice: 30; } }
   @media only screen and (min-width: 65em) {
     .main {
-      border: 30px solid transparent;
+      border: 30px solid white;
       border-image-source: url(assets/mandarinZenGarden.png);
       border-image-repeat: round;
       border-image-slice: 30; } }
   .main .explanation, .main .benefits {
-    border: 15px solid transparent;
+    border: 15px solid white;
     border-image-source: url(assets/mandarinZenGarden.png);
     border-image-repeat: round;
     border-image-slice: 30;
     width: 100%; }
     @media only screen and (min-width: 47.9em) and (max-width: 65em) {
       .main .explanation, .main .benefits {
-        border: 20px solid transparent;
+        border: 20px solid white;
         border-image-source: url(assets/mandarinZenGarden.png);
         border-image-repeat: round;
         border-image-slice: 30; } }
     @media only screen and (min-width: 65em) {
       .main .explanation, .main .benefits {
-        border: 30px solid transparent;
+        border: 30px solid white;
         border-image-source: url(assets/mandarinZenGarden.png);
         border-image-repeat: round;
         border-image-slice: 30; } }
   .main .participation, .main .requirements {
-    border: 15px solid transparent;
+    border: 15px solid white;
     border-image-source: url(assets/mandarinZenGardenVertical.png);
     border-image-repeat: repeat;
     border-image-slice: 130; }
     @media only screen and (min-width: 47.9em) and (max-width: 65em) {
       .main .participation, .main .requirements {
-        border: 20px solid transparent;
+        border: 20px solid white;
         border-image-source: url(assets/mandarinZenGardenVertical.png);
         border-image-repeat: repeat;
         border-image-slice: 130; } }
     @media only screen and (min-width: 65em) {
       .main .participation, .main .requirements {
-        border: 30px solid transparent;
+        border: 30px solid white;
         border-image-source: url(assets/mandarinZenGardenVertical.png);
         border-image-repeat: repeat;
         border-image-slice: 130; } }

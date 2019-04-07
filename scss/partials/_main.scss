@@ -2,41 +2,41 @@
     
     background-color: $color-5;
     margin: 0 auto;
-    border: 15px solid transparent;
+    border: 15px solid white;
     border-image-source: url(assets/mandarinZenGarden.png);
     border-image-repeat: round;
     border-image-slice: 30;
 
     @include MQ(M) {
-        border: 20px solid transparent;
+        border: 20px solid white;
         border-image-source: url(assets/mandarinZenGarden.png);
         border-image-repeat: round;
         border-image-slice: 30;
     }
 
     @include MQ(L) {
-        border: 30px solid transparent;
+        border: 30px solid white;
         border-image-source: url(assets/mandarinZenGarden.png);
         border-image-repeat: round;
         border-image-slice: 30;
     }
     
     .explanation,.benefits {
-        border: 15px solid transparent;
+        border: 15px solid white;
         border-image-source: url(assets/mandarinZenGarden.png);
         border-image-repeat: round;
         border-image-slice: 30;
         width: 100%;
 
         @include MQ(M) {
-            border: 20px solid transparent;
+            border: 20px solid white;
             border-image-source: url(assets/mandarinZenGarden.png);
             border-image-repeat: round;
             border-image-slice: 30;
         }
 
         @include MQ(L) {
-            border: 30px solid transparent;
+            border: 30px solid white;
             border-image-source: url(assets/mandarinZenGarden.png);
             border-image-repeat: round;
             border-image-slice: 30;
@@ -45,20 +45,20 @@
 
     .participation, .requirements {
         
-        border: 15px solid transparent;
+        border: 15px solid white;
         border-image-source: url(assets/mandarinZenGardenVertical.png);
         border-image-repeat: repeat;
         border-image-slice: 130;
 
         @include MQ(M) {
-            border: 20px solid transparent;
+            border: 20px solid white;
             border-image-source: url(assets/mandarinZenGardenVertical.png);
             border-image-repeat: repeat;
             border-image-slice: 130;
         }
 
         @include MQ(L) {
-            border: 30px solid transparent;
+            border: 30px solid white;
             border-image-source: url(assets/mandarinZenGardenVertical.png);
             border-image-repeat: repeat;
             border-image-slice: 130;
