@@ -72,8 +72,12 @@
         -webkit-box-shadow: inset 0 0 10px #000000;
         box-shadow:         inset 0 0 10px #000000;
 
+        @include MQ(M) {
+            padding: 1.5em;
+        }
+
         @include MQ(L) {
-            padding:  2em;
+            padding: 2em;
         }
     
     }
